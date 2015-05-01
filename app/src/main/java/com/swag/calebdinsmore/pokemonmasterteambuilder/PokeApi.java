@@ -13,4 +13,5 @@ public interface PokeApi {
 
     @GET("/{resource}")
     void getPokemon(@Path("resource") String resource, Callback<Pokemon> callback);
+    Sprite getSprite(@Path("resource") String resource);
 }

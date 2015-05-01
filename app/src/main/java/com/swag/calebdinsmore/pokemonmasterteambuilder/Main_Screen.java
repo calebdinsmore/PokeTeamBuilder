@@ -71,7 +71,6 @@ public class Main_Screen extends ActionBarActivity
         SharedPreferences sharedPrefs = getSharedPreferences(JSON, 0);
         String pokedexStr = sharedPrefs.getString("Pokedex", null);
         JSONDexHandler_Retro dexHandler_retro = new JSONDexHandler_Retro();
-
         if ( pokedexStr == null ) {
             dexHandler_retro.fetchPokedex(getApplicationContext());
 

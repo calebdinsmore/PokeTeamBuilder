@@ -20,6 +20,7 @@ public class Pokemon {
     private Integer sp_atk;
     private Integer sp_def;
     private Integer speed;
+    private ArrayList<SpriteResource> sprites;
 
     private ArrayList<TypeResource> types;
 
@@ -100,7 +101,16 @@ public class Pokemon {
     public void setResource_uri(String resource_uri) {
         this.resource_uri = resource_uri;
     }
-//endregion
+
+    public ArrayList<SpriteResource> getSprites() {
+        return sprites;
+    }
+
+    public void setSprites(ArrayList<SpriteResource> sprites) {
+        this.sprites = sprites;
+    }
+
+    //endregion
 
     public int calculateTotal() {
         return attack + defense + sp_atk + sp_def + hp + speed;
@@ -148,5 +158,17 @@ public class Pokemon {
             this.resource_uri = resource_uri;
         }
         //endregion
+    }
+
+    public class SpriteResource {
+        private String resource_uri;
+
+        public String getResource_uri() {
+            return resource_uri;
+        }
+
+        public void setResource_uri(String resource_uri) {
+            this.resource_uri = resource_uri;
+        }
     }
 }

@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 public class SelectedPokemonFragment extends Fragment {
     private TextView name,
     hp,
@@ -18,6 +20,7 @@ public class SelectedPokemonFragment extends Fragment {
     speed,
     total;
     ImageView sprite;
+    String sprite_res;
 
     public SelectedPokemonFragment(){
     }
@@ -41,6 +44,16 @@ public class SelectedPokemonFragment extends Fragment {
 
         setTextFromBundle();
 
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Sprite sprite1 = JSONDexHandler_Retro.pokeApi.getSprite(sprite_res);
+                Picasso.with(getActivity().getApplicationContext()).load("http://i.imgur.com/DvpvklR.png").into(sprite);
+            }
+        });
+        thread.start();
+
+
         return rootView;
     }
 
@@ -54,5 +67,7 @@ public class SelectedPokemonFragment extends Fragment {
         total.setText(Integer.toString(args.getInt("total")));
         hp.setText(Integer.toString(args.getInt("hp")));
         name.setText(args.getString("name"));
+
+        sprite_res = args.getString("sprite_res");
     }
 }
