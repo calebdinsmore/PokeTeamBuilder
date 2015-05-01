@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <item name="pokeballRed" type="color">#CC1212</item>
+    <item name="pokeballBlack" type="color">#222224</item>
+    <item name="pokeballWhite" type="color">#f0f0f0</item>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Theme.TeamBuilder.ActionBar</item>
+        <item name="actionBarStyle">@style/Theme.TeamBuilder.ActionBar</item>
+    </style>
+
+    <style name="Theme.TeamBuilder.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/pokeballRed</item>
+        <item name="background">@color/pokeballRed</item>
+    </style>
+
+</resources>

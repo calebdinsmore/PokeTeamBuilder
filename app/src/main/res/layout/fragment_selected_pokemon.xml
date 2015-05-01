@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sprite"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HP"
+        android:id="@+id/hp_label"
+        android:layout_below="@+id/name"
+        android:layout_toStartOf="@+id/name"
+        android:layout_marginTop="90dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Attack"
+        android:id="@+id/attack_label"
+        android:layout_below="@+id/hp_label"
+        android:layout_toStartOf="@+id/name"
+        android:layout_marginTop="35dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Defense"
+        android:id="@+id/defense_label"
+        android:layout_below="@+id/attack_label"
+        android:layout_alignEnd="@+id/attack_label"
+        android:layout_marginTop="35dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SpAtk"
+        android:id="@+id/spatk_label"
+        android:layout_below="@+id/defense_label"
+        android:layout_alignEnd="@+id/defense_label"
+        android:layout_marginTop="35dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SpDef"
+        android:id="@+id/spdef_label"
+        android:layout_below="@+id/spatk_label"
+        android:layout_alignEnd="@+id/spatk_label"
+        android:layout_marginTop="35dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Speed"
+        android:id="@+id/speed_label"
+        android:layout_below="@+id/spdef_label"
+        android:layout_alignEnd="@+id/spdef_label"
+        android:layout_marginTop="35dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total"
+        android:id="@+id/total_label"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/speed_label"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HP"
+        android:id="@+id/hp"
+        android:layout_alignTop="@+id/hp_label"
+        android:layout_toEndOf="@+id/name"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Attack"
+        android:id="@+id/attack"
+        android:layout_alignTop="@+id/attack_label"
+        android:layout_alignStart="@+id/hp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Defense"
+        android:id="@+id/defense"
+        android:layout_alignTop="@+id/defense_label"
+        android:layout_alignStart="@+id/attack"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SpAtk"
+        android:id="@+id/spatk"
+        android:layout_alignTop="@+id/spatk_label"
+        android:layout_alignStart="@+id/defense"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SpDef"
+        android:id="@+id/spdef"
+        android:layout_alignTop="@+id/spdef_label"
+        android:layout_alignStart="@+id/spatk"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Speed"
+        android:id="@+id/speed"
+        android:layout_alignTop="@+id/speed_label"
+        android:layout_alignStart="@+id/spdef"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total"
+        android:id="@+id/total"
+        android:layout_alignTop="@+id/total_label"
+        android:layout_alignStart="@+id/speed"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Team"
+        android:id="@+id/add_to_team"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

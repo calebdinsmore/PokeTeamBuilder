@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pokemon Master: Team Builder</string>
+    <string name="title_section1">My Team</string>
+    <string name="title_section2">Strengths and Weaknesses</string>
+    <string name="title_section3">Advanced Search</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_searchable">SearchableActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search_hint">Pokemon Search</string>
+    <string name="team_search">Team_Search_Bar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_team_stats_fragment">TeamStatsFragment</string>
+
+    <string-array name="generations">
+        <item>Gen 1</item>
+        <item>Gen 2</item>
+        <item>Gen 3</item>
+        <item>Gen 4</item>
+        <item>Gen 5</item>
+        <item>Gen 6</item>
+]</string-array>
+
+    <string name="title_activity_recommendation">RecommendationActivity</string>
+
+</resources>
