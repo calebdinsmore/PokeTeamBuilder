@@ -13,8 +13,22 @@
     </style>
 
     <style name="Theme.TeamBuilder.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@color/pokeballRed</item>
-        <item name="background">@color/pokeballRed</item>
+        <item name="android:background">@color/pokeballBlack</item>
+        <item name="background">@color/pokeballBlack</item>
+
+        <item name="android:titleTextStyle">@style/ActionBarTitleText</item>
+    </style>
+
+    <style name="RedText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/pokeballRed</item>
+    </style>
+    
+    <style name="ActionBarTitleText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/pokeballWhite</item>
+    </style>
+
+    <style name="RedTextTitle" parent="RedText">
+        <item name="android:textSize">30sp</item>
     </style>
 
 </resources>

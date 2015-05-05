@@ -76,7 +76,7 @@ public class SearchableActivity extends ActionBarActivity {
         makeBundle.putInt("hp", pokemon.getHp());
         makeBundle.putString("name", capitalize(pokemon.getName()));
         makeBundle.putInt("total", pokemon.calculateTotal());
-        makeBundle.putString("sprite_res", pokemon.getSprites().get(0).getResource_uri());
+        //makeBundle.putString("sprite_res", pokemon.getSprites().get(0).getResource_uri());
         return makeBundle;
     }
 

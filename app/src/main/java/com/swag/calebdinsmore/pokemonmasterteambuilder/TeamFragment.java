@@ -1,6 +1,6 @@
 package com.swag.calebdinsmore.pokemonmasterteambuilder;
 
-import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class TeamFragment extends Fragment {
+public class TeamFragment extends ListFragment {
     ArrayList<String> teamList;
     ListView teamListView;
     ArrayAdapter<String> teamAdapter;
@@ -23,12 +23,11 @@ public class TeamFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_team, container, false);
-        teamListView = (ListView) rootView.findViewById(R.id.teamList);
         teamList = new ArrayList<String>();
         teamList.add("Charmander");
         teamList.add("Arceus");
         teamAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.basic_list_item, teamList);
-        teamListView.setAdapter(teamAdapter);
+        setListAdapter(teamAdapter);
 
 
         return rootView;

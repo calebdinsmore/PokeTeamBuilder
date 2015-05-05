@@ -44,14 +44,14 @@ public class SelectedPokemonFragment extends Fragment {
 
         setTextFromBundle();
 
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Sprite sprite1 = JSONDexHandler_Retro.pokeApi.getSprite(sprite_res);
-                Picasso.with(getActivity().getApplicationContext()).load("http://i.imgur.com/DvpvklR.png").into(sprite);
-            }
-        });
-        thread.start();
+//        Thread thread = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                Sprite sprite1 = JSONDexHandler_Retro.pokeApi.getSprite(sprite_res);
+//                Picasso.with(getActivity().getApplicationContext()).load("http://i.imgur.com/DvpvklR.png").into(sprite);
+//            }
+//        });
+//        thread.start();
 
 
         return rootView;
@@ -68,6 +68,6 @@ public class SelectedPokemonFragment extends Fragment {
         hp.setText(Integer.toString(args.getInt("hp")));
         name.setText(args.getString("name"));
 
-        sprite_res = args.getString("sprite_res");
+        //sprite_res = args.getString("sprite_res");
     }
 }

@@ -1,6 +1,7 @@
 package com.swag.calebdinsmore.pokemonmasterteambuilder;
 
 import android.app.Activity;
+import android.app.ListFragment;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
@@ -94,8 +95,10 @@ public class Main_Screen extends ActionBarActivity
         switch (number) {
             case 1:
                 mTitle = getString(R.string.title_section1);
-                frag = new TeamFragment();
-                break;
+                android.support.v4.app.ListFragment fragment = new TeamFragment();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+                return;
             case 2:
                 mTitle = getString(R.string.title_section2);
                 break;
